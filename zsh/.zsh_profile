@@ -1,0 +1,8 @@
+addToPathFront() {
+    export PATH="$1:$PATH"
+}
+
+addToPathFront $HOME/.local/scripts
+addToPathFront $HOME/.local/bin
+
+bindkey -s ^f "tmux-sessionizer\n"
