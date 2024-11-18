@@ -1,3 +1,2 @@
 # .dotfiles
-My personal dotfiles configuration.
-Easy installation TBD.
+Personal dotfiles configuration.
