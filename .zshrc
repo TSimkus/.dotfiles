@@ -73,6 +73,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zsh_profile
 
 # User configuration
 
@@ -81,6 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
+export EDITOR='nvim'
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -102,11 +104,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-export PATH="$PATH:/opt/nvim-linux64/bin"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="/home/taysim/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/home/taysim/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+. "/home/taysim/.deno/env"
